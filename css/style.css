@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+} 
+body {
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#cafe {
+    background-color: #eabf99;
+    /* background-image: url(./images/Asset\ 5.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+#cafe .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0px;
+}
+
+#cafe .box .logo img {
+    width: 130px;
+}
+
+#cafe .main ul {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#cafe .main ul li {
+    cursor: pointer;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 0.5s;
+}
+#cafe .main ul li:hover{
+    color: #fff;
+}
+.btn {
+    border: none;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #a0622c;
+    font-style: italic;
+}
+.btn:hover{
+    background-color: #2E140A;
+    /* color: #a0622c; */
+}
+#cafe .image {
+    position: absolute;
+    margin: auto;
+    bottom: -5px;
+    left: 30px;
+    max-width: 100%; /* Ensure image doesn't overflow */
+}
+
+main {
+    text-align: center;
+}
+
+#cafe .icon {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+}
+
+#cafe .icon:hover .toggle_menu {
+    display: block;
+}
+
+main .content {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 20%;
+}
+
+.content .text h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text .BTN_1 {
+    margin-right: 20px;
+    font-style: italic;
+}
+
+.text .BTN_2 {
+    border: 1px solid #000;
+    padding: 5px 20px;
+    background-color: transparent;
+    font-style: italic;
+}
+
+.curser {
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 576px) {
+    .content .text h1 {
+        font-size: 70px;
+    }
+
+    #cafe .image {
+        left: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    #cafe .main ul li {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #cafe .main ul {
+        display: flex;
+    }
+
+    #cafe .icon {
+        display: none;
+    }
+
+    #cafe .image {
+        left: 170px;
+    }
+
+    .content .text h1 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content .text h1 {
+        font-size: 60px;
+    }
+
+    .content .text {
+        top: 100px;
+        right: 120px;
+    }
+
+    #cafe .image {
+        left: 200px;
+    }
+
+    .content .text h1 {
+        font-size: 85px;
+    }
+
+    #cafe .main ul li {
+        font-size: 30px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #cafe {
+        border-radius: 20px;
+        width: 95%;
+        margin: 40px auto;
+        min-height: 90vh;
+    }
+
+    .container {
+        max-height: 130vh;
+        background-color: #f3b57e;
+    }
+
+    #cafe .image {
+        bottom: 40px;
+    }
+
+    #cafe .image img {
+        width: 150%;
+    }
+
+    .content .text {
+        position: absolute;
+        top: 60px;
+        right: 200px;
+        text-align: center;
+    }
+
+    .content .text h1 {
+        font-size: 100px;
+        font-weight: bold;
+    }
+}
